@@ -1023,7 +1023,7 @@ In fork mode almost all options are the same as the cluster mode. But there is n
 
 **By using the fork mode you will lose core features of pm2 like the automatic clusterization of your code over all CPUs available and the 0s reload.**
 
-So use it if you only need a forever-like behaviour.
+So only use it if you need a forever-like behaviour.
 
 Here is how to start your app within a fork:
 
@@ -1095,7 +1095,7 @@ $ nvm alias default v0.11.10
 <a name="a27"/>
 ## Contributing/Development mode
 
-To hack PM2, it's very simple:
+To hack PM2, it is very simple:
 
 ```bash
 $ pm2 kill   # kill the current pm2
@@ -1104,7 +1104,7 @@ $ cd pm2/
 $ DEBUG=* PM2_DEBUG=true ./bin/pm2 --no-daemon
 ```
 
-Each time you edit the code, be sure to kill and restart PM2 to make changes taking effect.
+Each time you edit the code, be sure to kill and restart PM2 in order to make changes effective.
 
 ## Install PM2 development
 
@@ -1122,7 +1122,7 @@ $ npm install -g pm2@latest
 ```
 
 ### Node 0.10.x doesn't free the script port when stopped. It's due to the Node.js cluster module.
-So if you feel that this problem is important for your use case, use the [fork mode](#execute-any-script-what-is-fork-mode-) instead.
+If you feel this problem is important for your use case, use the [fork mode](#execute-any-script-what-is-fork-mode-) instead.
 By using the fork mode you will lose core features of PM2 like the automatic clusterization of your code over all CPUs available and the 0s reload.
 
 ```
@@ -1134,7 +1134,7 @@ For more information about this, see [issue #74](https://github.com/Unitech/pm2/
 ### `Cannot read property 'getsockname' of undefined`
 
 When using the cluster mode (by default) you can't use ports from 0 to 1024. If you really need to exec in this range use the [fork mode](#a23) with the `-x` parameter.
-By using the fork mode you will lose core features of pm2 like the automatic clusterization of your code over all CPUs available and the 0s reload.
+By using the fork mode you will lose core features of PM2 like the automatic clusterization of your code over all CPUs available and the 0s reload.
 
 ### User tips from issues
 - [Vagrant and pm2 #289](https://github.com/Unitech/pm2/issues/289#issuecomment-42900019)
